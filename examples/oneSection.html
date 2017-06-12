@@ -83,10 +83,12 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['firstPage'],
-				sectionsColor: ['#4A6FB1'],
-				autoScrolling: false,
+				sectionsColor: ['#4A6FB1', '#4BBFC3', '#7BAABE'],
+				
+				scrollOverflow:true,
 				css3: true,
 				fitToSection: false
+				
 			});
 		});
 	</script>
@@ -138,18 +140,9 @@
 
 
 <div id="fullpage">
-	<div class="section " id="section0">
-		<div class="slide">
-			<h1>One single section</h1>
-		</div>
-		<div class="slide">
-			<h1>And a normal website under it</h1>
-		</div>
-
-		<div class="slide">
-			<h1>A great single slider!</h1>
-		</div>
-	</div>
+	<div class="section active" id="section0"><h1>fullPage.js</h1></div>
+	<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+	<div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
 </div>
 
 
